@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53018586-064d-459a-af12-35f7e70c4741" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arrays/ArraysSyntax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrays/ArraysSyntax.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +40,26 @@
     &quot;last_opened_file_path&quot;: &quot;/home/devkakai/projects/SpringBoot/springSecurityV2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ArraysSyntax">
+  <component name="RunManager" selected="Application.SinglyList">
     <configuration name="ArraysSyntax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="arrays.ArraysSyntax" />
       <module name="Data_Structures" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SinglyLinkedList.SinglyList" />
+      <module name="Data_Structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SinglyLinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SinglyList" />
         <item itemvalue="Application.ArraysSyntax" />
         <item itemvalue="Application.TimeCoplexity" />
       </list>
