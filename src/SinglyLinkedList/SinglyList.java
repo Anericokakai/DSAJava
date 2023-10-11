@@ -190,6 +190,22 @@ public class SinglyList {
 
     }
 
+//    delete at the end
+
+    public  boolean searchForAnode( int search){
+
+        ListNode current =head;
+        while(current!=null){
+            if(current.data==search){
+                return  true;
+            }
+            current=current.next;
+
+        }
+        return false;
+
+    }
+
 
 
 
@@ -214,6 +230,12 @@ list.insertAtTheEnd();
 list.insertAtAnyPosition(15,8);
         list.display();
         System.out.println();
+        list.searchForAnode(1);
+        if(list.searchForAnode(39)){
+            System.out.println("search key found");
+        }else{
+            System.out.println("search key not found");
+        }
 System.out.println(list.deleteFirst().data);
 
 list.deleteAtTheEnd();
