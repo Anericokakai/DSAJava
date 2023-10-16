@@ -25,13 +25,15 @@ public class SinglyList {
 
 
 //    ! DISPLAY EACH DATA OF THE NODE
-    public  void  display(){
+    public  void  display(ListNode head){
         ListNode current= head;
 
         while(current!=null){
             System.out.print(current.data+"-->");
             current=current.next;
         }
+        System.out.print("null");
+        System.out.println();
     }
 
 //    ! COUNT THE NUMBER OF NODES ON THE LIST
@@ -190,7 +192,7 @@ public class SinglyList {
 
     }
 
-//    delete at the end
+//    SEARCH FOR A NDE IN THE LIST
 
     public  boolean searchForAnode( int search){
 
@@ -207,19 +209,45 @@ public class SinglyList {
     }
 
 
+//    REVERSE A SINGLY LIST
+    public  ListNode reverseList( ListNode head){
+
+
+        if(head==null){
+            return head;
+        }
+        ListNode current=head;
+        ListNode previous= null;
+        ListNode next=null;
+        while (current!=null){
+
+            next=current.next;
+            current.next=previous;
+            previous=current;
+            current=next;
+
+        }
+
+        return previous;
+
+
+    }
+
+
+
 
 
     public static void main(String[] args) {
 
         SinglyList list=new SinglyList();
 
-        list.head=new ListNode(10);
+        ListNode head= new ListNode(10);
         ListNode second= new ListNode(1);
         ListNode third= new ListNode(8);
         ListNode forth= new ListNode(11);
 //      ! link the list
 
-list.head.next=second;
+head.next=second;
 second.next=third;
 third.next=forth;
 
@@ -228,7 +256,7 @@ list.insertAtTheEnd();
 
 
 list.insertAtAnyPosition(15,8);
-        list.display();
+        list.display(head);
         System.out.println();
         list.searchForAnode(1);
         if(list.searchForAnode(39)){
@@ -236,11 +264,13 @@ list.insertAtAnyPosition(15,8);
         }else{
             System.out.println("search key not found");
         }
-System.out.println(list.deleteFirst().data);
+//System.out.println(list.deleteFirst().data);
+//
+//list.deleteAtTheEnd();
+//list.deleteAtAnyPosition(4);
+    ListNode reverseHead= list.reverseList(head);
+        list.display(reverseHead);
 
-list.deleteAtTheEnd();
-list.deleteAtAnyPosition(4);
-    list.display();
 System.out.println();
 list.LengthOfList();
 System.out.println();
