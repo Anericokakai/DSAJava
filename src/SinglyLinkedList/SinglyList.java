@@ -210,29 +210,11 @@ public class SinglyList {
 
 
 //    REVERSE A SINGLY LIST
-    public  ListNode reverseList( ListNode head){
+
+public ListNode reverseLinkedList(ListNode head){
 
 
-        if(head==null){
-            return head;
-        }
-        ListNode current=head;
-        ListNode previous= null;
-        ListNode next=null;
-        while (current!=null){
-
-            next=current.next;
-            current.next=previous;
-            previous=current;
-            current=next;
-
-        }
-
-        return previous;
-
-
-    }
-
+}
 
 
 
@@ -267,18 +249,13 @@ list.insertAtAnyPosition(15,8);
 //System.out.println(list.deleteFirst().data);
 //
 //list.deleteAtTheEnd();
-//list.deleteAtAnyPosition(4);
-    ListNode reverseHead= list.reverseList(head);
-        list.display(reverseHead);
+////list.deleteAtAnyPosition(4);
+//
+//        list.display(reverseHead);
 
 System.out.println();
 list.LengthOfList();
 System.out.println();
-
-
-
-
-
 
 
     }
